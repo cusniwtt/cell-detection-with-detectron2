@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Dataset
+datasets/physics_tasks_solutions.zip
+datasets/physics_tasks_solutions/
+datasets/annotation/
+datasets/6x6sample_augment/
+
 # C extensions
 *.so
 
