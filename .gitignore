@@ -7,6 +7,7 @@ __pycache__/
 datasets/physics_tasks_solutions.zip
 datasets/physics_tasks_solutions/
 datasets/annotation/
+datasets/6x6sample
 datasets/6x6sample_augment/
 
 # C extensions
