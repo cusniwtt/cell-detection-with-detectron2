@@ -1,0 +1,74 @@
+[02/27 10:27:21 d2.data.datasets.coco]: Loaded 12 images in COCO format from /content/cell-detection-with-detectron2/datasets/samples/annotation/test.json
+[02/27 10:27:21 d2.data.dataset_mapper]: [DatasetMapper] Augmentations used in inference: [ResizeShortestEdge(short_edge_length=(800, 800), max_size=1333, sample_style='choice')]
+[02/27 10:27:21 d2.data.common]: Serializing the dataset using: <class 'detectron2.data.common._TorchSerializedList'>
+[02/27 10:27:21 d2.data.common]: Serializing 12 elements to byte tensors and concatenating them all ...
+[02/27 10:27:21 d2.data.common]: Serialized dataset takes 0.39 MiB
+[02/27 10:27:21 d2.evaluation.evaluator]: Start inference on 12 batches
+[02/27 10:27:23 d2.evaluation.evaluator]: Inference done 11/12. Dataloading: 0.0015 s/iter. Inference: 0.1031 s/iter. Eval: 0.0083 s/iter. Total: 0.1129 s/iter. ETA=0:00:00
+[02/27 10:27:23 d2.evaluation.evaluator]: Total inference time: 0:00:00.847830 (0.121119 s / iter per device, on 1 devices)
+[02/27 10:27:23 d2.evaluation.evaluator]: Total inference pure compute time: 0:00:00 (0.102091 s / iter per device, on 1 devices)
+[02/27 10:27:23 d2.evaluation.coco_evaluation]: Preparing results for COCO format ...
+[02/27 10:27:23 d2.evaluation.coco_evaluation]: Saving results to ./output/coco_instances_results.json
+[02/27 10:27:23 d2.evaluation.coco_evaluation]: Evaluating predictions with unofficial COCO API...
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+[02/27 10:27:23 d2.evaluation.fast_eval_api]: Evaluate annotation type *bbox*
+[02/27 10:27:23 d2.evaluation.fast_eval_api]: COCOeval_opt.evaluate() finished in 0.01 seconds.
+[02/27 10:27:23 d2.evaluation.fast_eval_api]: Accumulating evaluation results...
+[02/27 10:27:23 d2.evaluation.fast_eval_api]: COCOeval_opt.accumulate() finished in 0.00 seconds.
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.142
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.477
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.032
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.046
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.241
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.278
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.016
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.122
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.258
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.248
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.238
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.276
+[02/27 10:27:23 d2.evaluation.coco_evaluation]: Evaluation results for bbox: 
+|   AP   |  AP50  |  AP75  |  APs  |  APm   |  APl   |
+|:------:|:------:|:------:|:-----:|:------:|:------:|
+| 14.206 | 47.728 | 3.179  | 4.600 | 24.059 | 27.822 |
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+[02/27 10:27:23 d2.evaluation.fast_eval_api]: Evaluate annotation type *segm*
+[02/27 10:27:23 d2.evaluation.fast_eval_api]: COCOeval_opt.evaluate() finished in 0.02 seconds.
+[02/27 10:27:23 d2.evaluation.fast_eval_api]: Accumulating evaluation results...
+[02/27 10:27:23 d2.evaluation.fast_eval_api]: COCOeval_opt.accumulate() finished in 0.00 seconds.
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.117
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.392
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.019
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.033
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.200
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.245
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.015
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.107
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.225
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.229
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.199
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.242
+[02/27 10:27:23 d2.evaluation.coco_evaluation]: Evaluation results for segm: 
+|   AP   |  AP50  |  AP75  |  APs  |  APm   |  APl   |
+|:------:|:------:|:------:|:-----:|:------:|:------:|
+| 11.738 | 39.162 | 1.925  | 3.348 | 20.000 | 24.455 |
+OrderedDict([('bbox',
+              {'AP': 14.205539082260762,
+               'AP50': 47.727745427474694,
+               'AP75': 3.1791087658313733,
+               'APs': 4.599844372287975,
+               'APm': 24.059405940594058,
+               'APl': 27.821782178217823}),
+             ('segm',
+              {'AP': 11.73764290676938,
+               'AP50': 39.16173225344707,
+               'AP75': 1.9254860589424918,
+               'APs': 3.347672808843568,
+               'APm': 20.0,
+               'APl': 24.455445544554454})])
