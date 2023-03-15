@@ -10,6 +10,7 @@ datasets/annotation/
 datasets/6x6sample/
 datasets/6x6sample_augment/
 datasets/stage1_train/
+datasets/yolov5
 output/
 *.DS_Store
 
