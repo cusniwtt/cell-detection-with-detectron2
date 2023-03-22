@@ -13,6 +13,7 @@ datasets/stage1_train/
 datasets/yolov5
 output/
 *.DS_Store
+datasets/detectron2/**
 
 # C extensions
 *.so
